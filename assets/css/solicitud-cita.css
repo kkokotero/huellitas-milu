@@ -129,6 +129,34 @@ body {
   border-radius: 1.5rem;
 }
 
+.datos-programados {
+  min-width: 0;
+}
+
+.mensaje-urgencia {
+  padding: 1.5rem;
+  border: 2px solid var(--cafe-ola);
+  border-radius: 1rem;
+  background-color: var(--beige-tarjeta);
+  color: var(--cafe-oscuro);
+  text-align: center;
+}
+
+.mensaje-urgencia h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.mensaje-urgencia p {
+  font-size: 1.15rem;
+}
+
+#mensaje-urgencia[hidden],
+#envio-programado[hidden],
+.datos-programados[hidden] {
+  display: none !important;
+}
+
 .etiqueta-seccion {
   float: none;
   width: auto;
