@@ -1,0 +1,135 @@
+/* GENERAL */
+/* Quita los espacios que el navegador pone por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* el ancho incluye el borde y el relleno */
+}
+
+body {
+  font-family: Arial, sans-serif; /* tipo de letra */
+  background-color: #fffdfa;      /* fondo casi blanco */
+  color: #5a2606;                 /* color de texto: café */
+  text-align: center;             /* centra todo el texto */
+}
+
+/* ENCABEZADO */
+header {
+  background-color: #f6d9ab;      /* fondo beige */
+  display: flex;                  /* pone logo y menú en una fila */
+  align-items: center;            /* los centra verticalmente */
+  gap: 20px;                      /* espacio entre logo y menú */
+  padding: 20px 40px;             /* espacio interior: 20 arriba/abajo, 40 a los lados */
+  border-bottom-left-radius: 60px;  /* esquinas de abajo redondeadas */
+  border-bottom-right-radius: 60px;
+}
+
+.logo {
+  width: 160px;                   /* tamaño del logo: cámbialo si lo quieres más grande */
+}
+
+nav {
+  flex: 1;                        /* el menú usa todo el espacio que sobra */
+  display: flex;
+  justify-content: space-around;  /* reparte los enlaces con espacio igual */
+  align-items: center;
+  background-color: #fdf0dc;      /* fondo crema */
+  padding: 15px;
+  border-radius: 50px;            /* bordes muy redondos */
+}
+
+nav a {
+  text-decoration: none;          /* quita el subrayado */
+  color: #5a2606;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+nav a:hover {                     /* cuando pasas el mouse por encima */
+  background-color: #fbe3c2;
+}
+
+nav a.activo {                    /* la página en la que estás */
+  background-color: #c9823f;
+  color: white;
+}
+
+/* CONTENIDO */
+main {
+  padding: 40px 20px 150px;       /* arriba 40, lados 20, abajo 150 (espacio para el botón) */
+}
+
+h1 {
+  font-size: 48px;                /* tamaño del título */
+}
+
+main p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* La cuadrícula: 3 columnas */
+.sintomas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* tres columnas iguales */
+  gap: 40px;                          /* espacio entre cuadros */
+  max-width: 800px;                   /* ancho máximo */
+  margin: 0 auto;                     /* lo centra en la pantalla */
+}
+
+.sintoma img {
+  width: 150px;                   /* tamaño de cada círculo */
+  height: 150px;
+  background-color: #fbe3c2;      /* color durazno del círculo */
+  border-radius: 50%;             /* 50% = círculo perfecto */
+  padding: 30px;                  /* espacio entre tu imagen y el borde del círculo */
+  object-fit: contain;            /* la imagen se ajusta sin deformarse */
+}
+
+.sintoma h3 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: #7a3a0e;      /* franja café */
+  height: 100px;
+  border-top-left-radius: 60px;   /* esquinas de arriba redondeadas */
+  border-top-right-radius: 60px;
+  position: fixed;                /* siempre pegada abajo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.boton {
+  position: absolute;             /* lo colocamos dentro de la franja */
+  right: 40px;
+  top: -20px;                     /* sobresale un poco hacia arriba */
+  background-color: #5a2606;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.boton:hover {
+  background-color: #c9823f;
+}
+
+/* CELULAR */
+/* Si la pantalla mide 700px o menos, hacemos cambios */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;       /* logo arriba, menú abajo */
+  }
+  nav {
+    flex-wrap: wrap;              /* los enlaces pasan a otra línea si no caben */
+  }
+  .sintomas {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en vez de 3 */
+  }
+}
