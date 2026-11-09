@@ -1,0 +1,184 @@
+:root {
+  --cafe-oscuro: #6f3209;
+  --cafe-ola: #8b4513;
+  --naranja-suave: #e5a665;
+  --beige: #fbdcb0;
+  --beige-tarjeta: #fde6c8;
+  --crema-body: #fffaf2;
+  --blanco: #ffffff;
+}
+
+body {
+  background-color: var(--crema-body);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 160px;
+}
+
+.nav {
+  background-color: var(--beige);
+  border-radius: 50px;
+}
+
+.nav-link {
+  color: var(--cafe-oscuro);
+  border-radius: 50px;
+}
+
+.nav .nav-link.activo {
+  background-color: var(--cafe-oscuro);
+  color: var(--blanco);
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--cafe-ola);
+}
+
+.nav .nav-link.activo:hover,
+.nav .nav-link.activo:focus {
+  color: var(--beige);
+}
+
+.logo {
+  height: 210px;
+  width: auto;
+}
+
+/* ----- Huellas del fondo (igual que en Nuestros servicios) ----- */
+
+.huella {
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+}
+
+.huella-n1 {
+  left: 8%;
+  top: 150px;
+}
+
+.huella-n2 {
+  right: 5%;
+  top: 300px;
+}
+
+.huella-n3 {
+  left: 5%;
+  top: 850px;
+}
+
+.huella-n4 {
+  left: 65%;
+  top: 150px;
+}
+
+.huella-c1 {
+  right: 6%;
+  top: 900px;
+}
+
+.huella-c2 {
+  right: 15%;
+  top: 30px;
+}
+
+.huella-c3 {
+  left: 32%;
+  top: 90px;
+  width: 120px;
+}
+
+.huella-h1 {
+  left: 15%;
+  top: 520px;
+  width: 110px;
+  transform: rotate(-12deg);
+}
+
+.huella-h2 {
+  right: 12%;
+  top: 620px;
+  width: 110px;
+  transform: rotate(-8deg);
+}
+
+/* ----- Formulario de citas ----- */
+
+.encabezado-citas {
+  color: var(--cafe-oscuro);
+}
+
+.tarjeta-formulario {
+  background-color: var(--blanco);
+  border: 2px solid var(--cafe-ola);
+  border-radius: 1.5rem;
+}
+
+.etiqueta-seccion {
+  float: none;
+  width: auto;
+  display: inline-block;
+  background-color: var(--beige);
+  color: var(--cafe-oscuro);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0 2rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-formulario .form-label {
+  color: var(--cafe-oscuro);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tarjeta-formulario .form-control,
+.tarjeta-formulario .form-select {
+  background-color: var(--crema-body);
+  border: 2px solid var(--cafe-ola);
+  border-radius: 0.75rem;
+}
+
+.tarjeta-formulario .form-control:focus,
+.tarjeta-formulario .form-select:focus {
+  border-color: var(--cafe-oscuro);
+  box-shadow: 0 0 0 0.25rem rgba(139, 69, 19, 0.25);
+}
+
+.tarjeta-formulario .form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--cafe-oscuro);
+}
+
+.tarjeta-formulario .form-check-input:checked {
+  background-color: var(--cafe-oscuro);
+  border-color: var(--cafe-oscuro);
+}
+
+.tarjeta-formulario input[type="checkbox"] {
+  border-radius: 0.4rem;
+}
+
+.texto-politica {
+  color: var(--cafe-oscuro);
+  font-size: 1.15rem;
+}
+
+.boton-enviar {
+  background-color: var(--cafe-oscuro);
+  color: var(--blanco);
+}
+
+.boton-enviar:hover {
+  background-color: var(--cafe-ola);
+  color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+  .columna-datos {
+    border-right: 2px solid var(--cafe-ola);
+  }
+}
