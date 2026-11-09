@@ -6,66 +6,95 @@
     <title>Nuestros servicios | Huellitas Milu</title>
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/servicios.css">
 </head>
 <body>
-    <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nuestros-servicios.html">Nuestros servicios</a></li>
-                <li><a href="sintomas.html">Sintomas comunes</a></li>
-                <li><a href="solicitud-cita.html">Solicitud de citas</a></li>
-                <li><a href="casos-exito.html">Casos de éxitos</a></li>
-            </ul>
+    <nav class="container d-flex align-items-center gap-3 px-5">
+        <img class="logo" src="../assets/images/logo.png" alt="Ilusstración del logo de huellitas milu">
+        <ul class="nav ms-auto fs-5">
+            <li><a  class="nav-link" href="../index.html">Inicio</a></li>
+            <li><a  class="nav-link activo" href="nuestros-servicios.html">Nuestros servicios</a></li>
+            <li><a class="nav-link" href="sintomas.html">Sintomas comunes</a></li>
+            <li><a  class="nav-link" href="solicitud-cita.html">Solicitud de citas</a></li>
+            <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        </ul>
     </nav>
-    <header>
-        <h1>Nuestros servicios</h1>
-        <p>Todo lo que tu mascota necesita</p>
+
+    <header class="text-center py-4">
+        <h1 class="display-2 fw-bold">Nuestros servicios</h1>
+        <p class="fs-1">Todo lo que tu mascota necesita</p>
     </header>
 
-    <section>
-        <article>
-            <h2>Consultas</h2>
-            <p>Brindamos atención médica integral mediante evaluaciones clínicas, diagnóstico y orientación profesional para cuidar la salud y el bienestar de tu mascota.</p>
-            <a href="solicitud-cita.html">Solicitar</a>
-        </article>
+    <section class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card tarjeta-servicio h-100 text-center p-4 rounded-5 border-0" >
+                    <i class="bi bi-clipboard2-pulse display-3"></i>
+                    <h2>Consultas</h2>
+                    <p>Brindamos atención médica integral mediante evaluaciones clínicas, diagnóstico y orientación profesional para cuidar la salud y el bienestar de tu mascota.</p>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                 </article>
+            </div>
 
-        <article>
-            <h2>Vacunación</h2>
-            <p>Protegemos a tu mascota contra enfermedades mediante esquemas de vacunación adecuados para su edad, condición de salud y necesidades.</p>
-            <a href="solicitud-cita.html">Solicitar</a>
-        </article>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card tarjeta-servicio h-100 text-center p-4 rounded-5 border-0">
+                    <i class="bi bi-eyedropper display-3"></i>
+                    <h2>Vacunación</h2>
+                    <p>Protegemos a tu mascota contra enfermedades mediante esquemas de vacunación adecuados para su edad, condición de salud y necesidades.</p>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                </article>
+            </div>
 
-        <article>
-            <h2>Desparasitación</h2>
-            <p>Ofrecemos tratamientos preventivos y de control para combatir parásitos internos y externos, contribuyendo a una vida más saludable para tu mascota.</p>
-            <a href="solicitud-cita.html">Solicitar</a>
-        </article>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card tarjeta-servicio h-100 text-center p-4 rounded-5 border-0">
+                    <i class="bi bi-virus display-3"></i>
+                    <h2>Desparasitación</h2>
+                    <p>Ofrecemos tratamientos preventivos y de control para combatir parásitos internos y externos, contribuyendo a una vida más saludable para tu mascota.</p>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                </article>
+            </div>
 
-        <article>
-            <h2>Cirugía</h2>
-            <p>Realizamos procedimientos quirúrgicos con profesionalismo, precisión y protocolos de seguridad, priorizando en todo momento el bienestar de tu mascota.</p>
-            <a href="solicitud-cita.html">Solicitar</a>
-        </article>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card tarjeta-servicio h-100 text-center p-4 rounded-5 border-0">
+                    <i class="bi bi-scissors display-3"></i>
+                    <h2>Cirugía</h2>
+                    <p>Realizamos procedimientos quirúrgicos con profesionalismo, precisión y protocolos de seguridad, priorizando en todo momento el bienestar de tu mascota.</p>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                </article>
+            </div>
 
-        <article>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card urgencias-24h h-100 text-center p-4 rounded-5 border-0">
+                    <i class="bi bi-bag-plus display-3"></i>
+                    <h2>Urgencias 24 horas</h2>
+                    <p>Atendemos situaciones que requieren valoración veterinaria inmediata, brindando atención oportuna y cuidados enfocados en proteger la vida y la salud de tu compañero.</p>
+                    <strong class="d-block mb-3">¡Abierto las 24 horas, todos los días!</strong>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                </article>
+            </div>
 
-            <h2>Urgencias 24 horas</h2>
-            <p>Atendemos situaciones que requieren valoración veterinaria inmediata, brindando atención oportuna y cuidados enfocados en proteger la vida y la salud de tu compañero.</p>
-            <strong>¡Abierto las 24 horas, todos los días!</strong>
-
-            <h2>Urgencias</h2>
-            <p>Atendemos situaciones que requieren valoración veterinaria inmediata, brindando atención oportuna y cuidados enfocados en proteger la vida y la salud de tu compañero.</p>
-
-        </article>
-
-        <article>
-            <h2>Hospitalización</h2>
-            <p>Proporcionamos cuidados y supervisión veterinaria durante la recuperación de tu mascota, garantizando un ambiente adecuado, atención constante y seguimiento de su evolución.</p>
-            <a href="solicitud-cita.html">Solicitar</a>
-        </article>
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card tarjeta-servicio h-100 text-center p-4 rounded-5 border-0">
+                    <i class="bi bi-house-heart display-3"></i>
+                    <h2>Hospitalización</h2>
+                    <p>Proporcionamos cuidados y supervisión veterinaria durante la recuperación de tu mascota, garantizando un ambiente adecuado, atención constante y seguimiento de su evolución.</p>
+                    <a class="btn boton-servicio rounded-pill px-4 mt-auto" href="solicitud-cita.html">Solicitar</a>
+                </article>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
+<img class="huella huella-n1" src="../assets/images/huella-naranja.png" alt="">
+<img class="huella huella-n2" src="../assets/images/huella-naranja.png" alt="">
+<img class="huella huella-n3" src="../assets/images/huella-naranja.png" alt="">
+<img class="huella huella-n4" src="../assets/images/huella-naranja.png" alt="">
+<img class="huella huella-c1" src="../assets/images/huella-cafe.png" alt="">
+<img class="huella huella-c2" src="../assets/images/huella-cafe.png" alt="">
+<img class="huella huella-c3" src="../assets/images/huella-cafe.png" alt="">
+<img class="huella huella-h1" src="../assets/images/huella-corazon.png" alt="">
+<img class="huella huella-h2" src="../assets/images/huella-corazon.png" alt="">
 </html>
