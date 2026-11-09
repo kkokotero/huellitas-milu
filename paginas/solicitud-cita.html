@@ -101,6 +101,18 @@
                 </div>
               </fieldset>
 
+              <div id="mensaje-urgencia" class="mensaje-urgencia" role="alert" hidden>
+                <h2>Tu mascota necesita atención inmediata</h2>
+                <p>
+                  No diligencies el formulario. Llama directamente a la clínica
+                  para recibir atención de urgencia.
+                </p>
+                <a class="btn boton-llamar rounded-pill px-4 py-2 fs-5" href="tel:+573000000000">
+                  Llamar al +57 300 000 0000
+                </a>
+              </div>
+
+              <fieldset id="datos-programados" class="datos-programados border-0 p-0 m-0">
               <div class="row gx-5 gy-4">
                 <fieldset class="col-12 col-md-6 columna-datos">
                   <legend class="etiqueta-seccion">Tus datos</legend>
@@ -303,9 +315,10 @@
                 </p>
                 <pre id="mensaje-whatsapp" class="mensaje-whatsapp" aria-live="polite"></pre>
               </section>
+              </fieldset>
             </div>
 
-            <p class="text-center mt-4">
+            <p class="text-center mt-4" id="envio-programado">
                 <a class="btn boton-enviar rounded-pill px-5 py-2 fs-3" id="enviar-whatsapp" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Enviar solicitud por WhatsApp</a>
             </p>
           </form>

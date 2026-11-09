@@ -2,9 +2,20 @@ const form = document.getElementById("formulariocita");
 const summary = document.querySelector(".resumen-whatsapp");
 const messagePreview = document.getElementById("mensaje-whatsapp");
 const sendLink = document.getElementById("enviar-whatsapp");
+const scheduledFields = document.getElementById("datos-programados");
+const urgencyMessage = document.getElementById("mensaje-urgencia");
+const scheduledSubmit = document.getElementById("envio-programado");
 const clinicWhatsApp = "573000000000";
 
-if (!form || !summary || !messagePreview || !sendLink) {
+if (
+  !form ||
+  !summary ||
+  !messagePreview ||
+  !sendLink ||
+  !(scheduledFields instanceof HTMLFieldSetElement) ||
+  !urgencyMessage ||
+  !scheduledSubmit
+) {
   throw new Error("Faltan elementos del formulario de solicitud de citas.");
 }
 
@@ -34,6 +45,21 @@ const buildMessage = () => {
 };
 
 const updateSendLink = () => {
+  const isUrgency =
+    form.querySelector('input[name="tipoatencion"]:checked')?.value ===
+    "urgencia";
+  scheduledFields.disabled = isUrgency;
+  scheduledFields.hidden = isUrgency;
+  urgencyMessage.hidden = !isUrgency;
+  scheduledSubmit.hidden = isUrgency;
+
+  if (isUrgency) {
+    sendLink.removeAttribute("href");
+    sendLink.setAttribute("aria-disabled", "true");
+    sendLink.tabIndex = -1;
+    return;
+  }
+
   const valid = form.checkValidity();
   sendLink.setAttribute("aria-disabled", String(!valid));
   sendLink.tabIndex = valid ? 0 : -1;
