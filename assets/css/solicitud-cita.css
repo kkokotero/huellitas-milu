@@ -45,7 +45,6 @@ body {
   width: auto;
 }
 
-/* ----- Huellas del fondo (igual que en Nuestros servicios) ----- */
 
 .huella {
   position: absolute;
@@ -103,9 +102,24 @@ body {
   transform: rotate(-8deg);
 }
 
-/* ----- Formulario de citas ----- */
 
 .encabezado-citas {
+  color: var(--cafe-oscuro);
+}
+
+.aviso-urgencia {
+  background-color: var(--cafe-ola);
+  color: var(--blanco);
+  border-radius: 1.5rem;
+}
+
+.boton-llamar {
+  background-color: var(--beige);
+  color: var(--cafe-oscuro);
+}
+
+.boton-llamar:hover {
+  background-color: var(--beige-tarjeta);
   color: var(--cafe-oscuro);
 }
 

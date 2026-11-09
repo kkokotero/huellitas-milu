@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,6 +49,21 @@
             <h1 class="display-4 fw-bold mb-0">Solicitud de Citas</h1>
             <p class="fs-3 mb-0">Agenda una cita para tu mascota</p>
           </div>
+
+          <div
+            class="aviso-urgencia d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 p-4 mb-4 text-center text-md-start"
+          >
+            <p class="fs-5 mb-0">
+              <strong>¿Es una urgencia?</strong> No llenes el formulario,
+              llámanos ya. Atendemos las 24 horas.
+            </p>
+            <a
+              href="tel:+573000000000"
+              class="btn boton-llamar rounded-pill px-4 py-2 fs-5"
+              >Llamar ahora</a
+            >
+          </div>
+
 
           <form id="formulariocita" action="#" method="post">
             <div class="tarjeta-formulario p-4 p-md-5">
@@ -177,6 +192,30 @@
                       <div class="invalid-feedback">
                         Selecciona el tipo de mascota.
                       </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <label for="raza" class="form-label">Raza</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="raza"
+                        name="raza"
+                        placeholder="Ej: Criollo"
+                        maxlength="50"
+                      />
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <label for="edad" class="form-label">Edad</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="edad"
+                        name="edad"
+                        placeholder="Ej: 2 años o 6 meses"
+                        maxlength="20"
+                      />
                     </div>
 
                     <div class="col-12 col-sm-6">
