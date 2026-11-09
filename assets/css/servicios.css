@@ -99,53 +99,52 @@ header {
   z-index: -1;
 }
 
-.huella-n1 { 
+.huella-naranja-1 {
     left: 8%;  
     top: 150px; 
 }
 
-.huella-n2 { 
+.huella-naranja-2 {
     right: 5%; 
     top: 300px; 
 
 }
-.huella-n3 { 
+.huella-naranja-3 {
     left: 5%;  
     top: 850px; 
 }
 
-.huella-n4 { 
+.huella-naranja-4 {
     left: 65%;  
     top: 150px;
 }
 
-.huella-c1 { 
+.huella-cafe-1 {
     right: 6%; 
     top: 900px; 
 }
 
-.huella-c2 { 
+.huella-cafe-2 {
     right: 15%; 
     top: 30px;   
 }
 
-.huella-c3 { 
+.huella-cafe-3 {
     left: 32%; 
     top: 90px;
      width: 120px; 
 }
 
-.huella-h1 { 
+.huella-corazon-1 {
     left: 15%;  
     top: 520px;
     width: 110px; 
     transform: rotate(-12deg); 
 }
 
-.huella-h2 { 
+.huella-corazon-2 {
     right: 12%; 
     top: 620px; 
     width: 110px; 
     transform: rotate(-8deg); 
 }
-
