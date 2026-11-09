@@ -99,50 +99,50 @@ header {
   z-index: -1;
 }
 
-.huella-naranja-1 {
+.huella-n1 { 
     left: 8%;  
     top: 150px; 
 }
 
-.huella-naranja-2 {
+.huella-n2 { 
     right: 5%; 
     top: 300px; 
 
 }
-.huella-naranja-3 {
+.huella-n3 { 
     left: 5%;  
     top: 850px; 
 }
 
-.huella-naranja-4 {
+.huella-n4 { 
     left: 65%;  
     top: 150px;
 }
 
-.huella-cafe-1 {
+.huella-c1 { 
     right: 6%; 
     top: 900px; 
 }
 
-.huella-cafe-2 {
+.huella-c2 { 
     right: 15%; 
     top: 30px;   
 }
 
-.huella-cafe-3 {
+.huella-c3 { 
     left: 32%; 
     top: 90px;
      width: 120px; 
 }
 
-.huella-corazon-1 {
+.huella-h1 { 
     left: 15%;  
     top: 520px;
     width: 110px; 
     transform: rotate(-12deg); 
 }
 
-.huella-corazon-2 {
+.huella-h2 { 
     right: 12%; 
     top: 620px; 
     width: 110px; 
