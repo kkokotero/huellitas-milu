@@ -1,0 +1,151 @@
+:root {
+  --cafe-oscuro: #6f3209;
+  --cafe-ola: #8b4513;
+  --naranja-suave: #e5a665;
+  --beige: #fbdcb0;
+  --beige-tarjeta: #fde6c8;
+  --crema-body: #fffaf2;
+  --blanco: #ffffff;
+}
+
+body {
+    background-color: var(--crema-body);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 160px;
+}
+
+header {
+    color: var(--cafe-oscuro);
+}
+
+.nav {
+  background-color: var(--beige);
+  border-radius: 50px;
+}
+
+.nav-link {
+    color: var(--cafe-oscuro);
+    border-radius: 50px;
+}
+
+.nav .nav-link.activo {
+  background-color: var(--cafe-oscuro);
+  color: var(--blanco);
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+    color: var(--cafe-ola);
+}
+
+.nav .nav-link.activo:hover,
+.nav .nav-link.activo:focus {
+    color: var(--beige);
+}
+
+
+.logo {
+  height: 210px;
+  width: auto;
+}
+
+.tarjeta-servicio {
+    background-color: var(--beige-tarjeta);
+}
+.tarjeta-servicio h2,
+.tarjeta-servicio i {
+    color: var(--cafe-oscuro);
+}
+
+
+.urgencias-24h {
+    background-color: var(--cafe-ola);
+}
+
+.urgencias-24h h2,
+.urgencias-24h i {
+    color: var(--blanco);
+}
+
+.urgencias-24h p,
+.urgencias-24h strong {
+    color: var(--crema-body);
+}
+
+.urgencias-24h .boton-servicio {
+  background-color: var(--beige);
+  color: var(--cafe-oscuro);
+}
+
+.urgencias-24h .boton-servicio:hover {
+    background-color: var(--beige-tarjeta);
+    color: var(--cafe-oscuro);
+}
+
+.boton-servicio {
+    background-color: var(--cafe-oscuro);
+    color: var(--blanco);
+}
+
+.boton-servicio:hover {
+  background-color: var(--cafe-ola);
+  color: var(--blanco);
+}
+
+.huella {
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+}
+
+.huella-n1 { 
+    left: 8%;  
+    top: 150px; 
+}
+
+.huella-n2 { 
+    right: 5%; 
+    top: 300px; 
+
+}
+.huella-n3 { 
+    left: 5%;  
+    top: 850px; 
+}
+
+.huella-n4 { 
+    left: 65%;  
+    top: 150px;
+}
+
+.huella-c1 { 
+    right: 6%; 
+    top: 900px; 
+}
+
+.huella-c2 { 
+    right: 15%; 
+    top: 30px;   
+}
+
+.huella-c3 { 
+    left: 32%; 
+    top: 90px;
+     width: 120px; 
+}
+
+.huella-h1 { 
+    left: 15%;  
+    top: 520px;
+    width: 110px; 
+    transform: rotate(-12deg); 
+}
+
+.huella-h2 { 
+    right: 12%; 
+    top: 620px; 
+    width: 110px; 
+    transform: rotate(-8deg); 
+}
+
