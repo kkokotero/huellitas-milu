@@ -1,15 +1,15 @@
 :root {
   --cafe-oscuro: #6f3209;
-  --cafe: #8b4513;
-  --naranja: #e5a665;
+  --cafe-ola: #8b4513;
+  --naranja-suave: #e5a665;
   --beige: #fbdcb0;
-  --beige-claro: #fde6c8;
-  --crema: #fffaf2;
+  --beige-tarjeta: #fde6c8;
+  --crema-body: #fffaf2;
   --blanco: #ffffff;
 }
 
 body {
-  background-color: var(--crema);
+  background-color: var(--crema-body);
   color: var(--cafe-oscuro);
   min-height: 100vh;
   overflow-x: hidden;
@@ -40,7 +40,7 @@ body {
 
 .menu-principal .nav-link:hover,
 .menu-principal .nav-link:focus {
-  color: var(--cafe);
+  color: var(--cafe-ola);
 }
 
 .menu-principal .nav-link.activo:hover,
@@ -60,7 +60,7 @@ body {
 
 .etiqueta-portada {
   align-items: center;
-  background-color: var(--beige-claro);
+  background-color: var(--beige-tarjeta);
   border-radius: 50px;
   color: var(--cafe-oscuro);
   display: inline-flex;
@@ -112,13 +112,13 @@ body {
 
 .boton-cita:hover,
 .boton-cita:focus {
-  background-color: var(--cafe);
+  background-color: var(--cafe-ola);
   color: var(--blanco);
 }
 
 .boton-llamada {
-  border: 2px solid var(--cafe);
-  color: var(--cafe);
+  border: 2px solid var(--cafe-ola);
+  color: var(--cafe-ola);
 }
 
 .boton-llamada:hover,
@@ -141,7 +141,7 @@ body {
 }
 
 .acceso-rapido {
-  background-color: var(--beige-claro);
+  background-color: var(--beige-tarjeta);
   border: 1px solid transparent;
   border-radius: 1.25rem;
   color: var(--cafe-oscuro);
@@ -156,7 +156,7 @@ body {
 .acceso-rapido:hover,
 .acceso-rapido:focus {
   background-color: var(--beige);
-  border-color: var(--naranja);
+  border-color: var(--naranja-suave);
   color: var(--cafe-oscuro);
   transform: translateY(-2px);
 }
@@ -213,7 +213,7 @@ body {
 }
 
 .consejo-cuidado {
-  background-color: var(--beige-claro);
+  background-color: var(--beige-tarjeta);
   border-radius: 3rem;
   height: 100%;
   padding: 1.5rem;
@@ -241,7 +241,7 @@ body {
 
 .contacto-inicio {
   align-items: center;
-  background-color: var(--cafe);
+  background-color: var(--cafe-ola);
   border-radius: 1.5rem;
   color: var(--blanco);
   display: flex;
@@ -256,7 +256,7 @@ body {
 }
 
 .contacto-inicio p {
-  color: var(--crema);
+  color: var(--crema-body);
   margin-bottom: 0;
 }
 
@@ -267,7 +267,7 @@ body {
 
 .boton-servicio:hover,
 .boton-servicio:focus {
-  background-color: var(--cafe);
+  background-color: var(--cafe-ola);
   color: var(--blanco);
 }
 
@@ -278,12 +278,12 @@ body {
 
 .contacto-inicio .boton-servicio:hover,
 .contacto-inicio .boton-servicio:focus {
-  background-color: var(--beige-claro);
+  background-color: var(--beige-tarjeta);
   color: var(--cafe-oscuro);
 }
 
 .pie-pagina {
-  background-color: var(--cafe);
+  background-color: var(--cafe-ola);
   border-radius: 1.5rem;
   color: var(--blanco);
   margin-bottom: 1.5rem;
@@ -322,7 +322,7 @@ body {
 }
 
 .pie-pagina .info-footer {
-  color: var(--crema);
+  color: var(--crema-body);
   line-height: 1.6;
   margin-bottom: 0.65rem;
 }
