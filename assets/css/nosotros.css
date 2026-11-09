@@ -56,6 +56,47 @@
     background-color: var(--beige-tarjeta);
 }
 
+.equipo-section {
+    position: relative;
+    isolation: isolate;
+}
+
+.equipo-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.huella-equipo {
+    z-index: -1;
+    width: clamp(4rem, 8vw, 7rem);
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.huella-equipo--1 {
+    top: 3rem;
+    left: 2%;
+    transform: rotate(-18deg);
+}
+
+.huella-equipo--2 {
+    top: 32%;
+    right: 2%;
+    transform: rotate(14deg);
+}
+
+.huella-equipo--3 {
+    bottom: 24%;
+    left: 3%;
+    transform: rotate(12deg);
+}
+
+.huella-equipo--4 {
+    right: 4%;
+    bottom: 2rem;
+    transform: rotate(-15deg);
+}
+
 .tarjeta-veterinario__foto-wrap {
     position: relative;
     overflow: hidden;
