@@ -129,6 +129,34 @@ body {
   border-radius: 1.5rem;
 }
 
+.datos-programados {
+  min-width: 0;
+}
+
+.mensaje-urgencia {
+  padding: 1.5rem;
+  border: 2px solid var(--cafe-ola);
+  border-radius: 1rem;
+  background-color: var(--beige-tarjeta);
+  color: var(--cafe-oscuro);
+  text-align: center;
+}
+
+.mensaje-urgencia h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.mensaje-urgencia p {
+  font-size: 1.15rem;
+}
+
+#mensaje-urgencia[hidden],
+#envio-programado[hidden],
+.datos-programados[hidden] {
+  display: none !important;
+}
+
 .etiqueta-seccion {
   float: none;
   width: auto;
@@ -181,9 +209,43 @@ body {
   font-size: 1.15rem;
 }
 
+.resumen-whatsapp {
+  border-top: 2px solid var(--beige);
+  padding-top: 1.5rem;
+}
+
+.resumen-whatsapp .etiqueta-seccion {
+  margin-bottom: 0.75rem;
+}
+
+.resumen-whatsapp__ayuda {
+  color: var(--cafe-oscuro);
+  font-size: 1rem;
+}
+
+.mensaje-whatsapp {
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--naranja-suave);
+  border-radius: 0.75rem;
+  background-color: var(--crema-body);
+  color: var(--cafe-oscuro);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 .boton-enviar {
   background-color: var(--cafe-oscuro);
   color: var(--blanco);
+}
+
+.boton-enviar[aria-disabled="true"] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .boton-enviar:hover {

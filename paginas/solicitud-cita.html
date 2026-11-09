@@ -101,6 +101,18 @@
                 </div>
               </fieldset>
 
+              <div id="mensaje-urgencia" class="mensaje-urgencia" role="alert" hidden>
+                <h2>Tu mascota necesita atención inmediata</h2>
+                <p>
+                  No diligencies el formulario. Llama directamente a la clínica
+                  para recibir atención de urgencia.
+                </p>
+                <a class="btn boton-llamar rounded-pill px-4 py-2 fs-5" href="tel:+573000000000">
+                  Llamar al +57 300 000 0000
+                </a>
+              </div>
+
+              <fieldset id="datos-programados" class="datos-programados border-0 p-0 m-0">
               <div class="row gx-5 gy-4">
                 <fieldset class="col-12 col-md-6 columna-datos">
                   <legend class="etiqueta-seccion">Tus datos</legend>
@@ -268,12 +280,13 @@
                       name="fecha"
                       min="2026-11-09"
                       max="2026-12-31"
+                      required
                     />
                   </div>
 
                   <div class="col-12 col-md-6">
                     <label for="franja" class="form-label"> Horario *</label>
-                    <select class="form-select" id="franja" name="franja">
+                    <select class="form-select" id="franja" name="franja" required>
                       <option value="">Selecciona un horario</option>
                       <option value="manana">Mañana</option>
                       <option value="tarde">Tarde</option>
@@ -294,10 +307,19 @@
                 />
                 <label for="politicas" class="texto-politica mb-0"> Acepto la política de privacidad</label>
               </div>
+
+              <section class="resumen-whatsapp mt-4" aria-labelledby="resumen-titulo" hidden>
+                <h2 id="resumen-titulo" class="etiqueta-seccion">Resumen de la solicitud</h2>
+                <p class="resumen-whatsapp__ayuda">
+                  Este es el mensaje que se abrirá en WhatsApp.
+                </p>
+                <pre id="mensaje-whatsapp" class="mensaje-whatsapp" aria-live="polite"></pre>
+              </section>
+              </fieldset>
             </div>
 
-            <p class="text-center mt-4">
-                <button type="submit" class="btn boton-enviar rounded-pill px-5 py-2 fs-3">Enviar solicitud</button>
+            <p class="text-center mt-4" id="envio-programado">
+                <a class="btn boton-enviar rounded-pill px-5 py-2 fs-3" id="enviar-whatsapp" aria-disabled="true" tabindex="-1" target="_blank" rel="noopener noreferrer">Enviar solicitud por WhatsApp</a>
             </p>
           </form>
         </section>
@@ -314,6 +336,6 @@
     <img class="huella d-none d-md-block huella-h1" src="../assets/images/huella-corazon.png" alt="" />
     <img class="huella d-none d-md-block huella-h2" src="../assets/images/huella-corazon.png" alt="" />
 
-
+    <script src="../assets/js/solicitud-cita.js" defer></script>
   </body>
 </html>
