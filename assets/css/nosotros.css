@@ -1,0 +1,49 @@
+:root {
+  --cafe-oscuro: #6f3209;
+  --cafe-ola: #8b4513;
+  --naranja-suave: #e5a665;
+  --beige: #fbdcb0;
+  --beige-tarjeta: #fde6c8;
+  --crema-body: #fffaf2;
+  --blanco: #ffffff;
+}
+
+.container > div {
+    @media (width < 990px) {
+        row-gap: 5rem;
+    }
+}
+
+.section-header {
+    color: var(--cafe-oscuro);
+
+    &.margin-header {
+        margin-top: 6rem;
+    }
+}
+
+.tarjeta-exito {
+    border: 0.3rem solid var(--cafe-ola);
+    background-color: var(--cafe-ola);
+    aspect-ratio: 4/5;
+    position: relative;
+}
+
+.img-exito {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-exito__message {
+    position: absolute;
+    background-color: var(--beige-tarjeta);
+    color: var(--cafe-oscuro);
+    bottom: 0%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    width: 95%;
+    font-size: clamp(1.5rem, 2dvw, 2rem);
+    font-weight: 600;
+    border: 0.2rem solid var(--naranja-suave);
+}
